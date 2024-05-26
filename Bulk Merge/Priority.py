@@ -28,7 +28,9 @@ def leadScore(list, *args):
 # return the first index and value where the value is non-null and does not contain
 # "null-like" values
 def notNull(list, *args):
-    new_list = [x.lower() for x in list]
+    print(list, *args)
+
+    new_list = [x.str.lower() for x in list]
 
     crap = ["empty", "unknown", "n/a", "[", "]", "none"]
 
